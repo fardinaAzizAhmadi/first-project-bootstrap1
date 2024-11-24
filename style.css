@@ -1,13 +1,223 @@
 @font-face{
     font-family: "vazir";
-    src: url("../fonts/vazir.eot");
+    src: url("fonts/vazir.eot");
     /* hdjshjd */
-    src: url("../fonts/vazir.eot?#iefix")format("embededd-opentype"),
-     url("../fonts/vazir.woff2") format("woff2"),
-     url("../fonts/vazir.woff") format("woff"),
-     url("../fonts/vazir.ttf");
+    src: url("fonts/vazir.eot?#iefix")format("embededd-opentype"),
+     url("fonts/vazir.woff2") format("woff2"),
+     url("fonts/vazir.woff") format("woff"),
+     url("fonts/vazir.ttf") format("truetype");
 
 }
 body{
     font-family: "vazir" !important;
 }
+a{
+    text-decoration: none;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6, p{
+    line-height: 1.8!important;
+
+}
+/* Utilities */
+.hover-grow{
+    transition: 0.5s;
+}
+.hover-grow :hover{
+    transform: scale(1.1);
+}
+
+/* headr */
+
+.header{
+    transition: all 0.5s;
+    padding: 20px 0;
+}
+.header-scrolled{
+    background-color: white;
+    box-shadow: 0px 2px 20px rgb(1 41 112/10%);
+}
+@media (max-width :992px){
+    .header {
+        background-color: white;
+    }
+}
+    
+
+/* intro */
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url(images/intro/intro-bg.png) top center no-repeat;
+    background-size: cover;
+}
+
+/* about  */
+
+
+.content{
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+
+/* counts */
+
+.counts i{
+    font-size: 42px;
+}
+
+.counts i.blue{
+    color: #4154f1;
+}
+.counts i.orange{
+    color: #ee6c20;
+}
+.counts i.green{
+    color: #15be56;
+}
+.counts i.red{
+    color: #bb0852;
+}
+
+/* features */
+.features i{
+    font-size: 44px;
+    color: #4154f1;
+
+}
+
+/* Service-box */
+.Service-box{
+    box-shadow: 0px 0 30px rgba(1, 41,112,0.08);
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.Service-box .icon{
+    padding: 20px;
+    font-size: 36px;
+    line-height: 0;
+    display: inline-block;
+    border-radius: 4px;
+}
+.Service-box .read-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.Service-box .read-more .icon{
+    font-size: 18px;
+    line-height: 0;
+    margin-right: 0.4rem;
+    padding: 0;
+}
+.Service-box.blue{
+    border-bottom: 3px solid #2db6fa;
+}
+.Service-box.blue .icon{
+    color:#2db6fa ;
+    background: #dbf3fe;
+}
+.Service-box.blue .read-more{
+    color:#2db6fa ;
+
+}
+.Service-box.blue:hover{
+    background:#2db6fa ;
+    color: #fff;
+}
+.Service-box:hover .read-more{
+    color: #fff;
+}
+.Service-box:hover .icon{
+    background-color: #fff;
+}
+/* ------ */
+
+.Service-box.orange{
+    border-bottom: 3px solid #f68c09;
+}
+.Service-box.orange .icon {
+    color:#f68c09 ;
+    background: #fde3c4;
+}
+.Service-box.orange .read-more {
+    color:#f68c09 ;
+
+}
+.Service-box.orange:hover {
+    background:#f68c09 ;
+    color: #fff;
+}
+/* green */
+.Service-box.green{
+    border-bottom: 3px solid #08da4e;
+}
+.Service-box.green .icon {
+    color:#08da4e ;
+    background: #cffddf;
+}
+.Service-box.green .read-more {
+    color:#08da4e ;
+
+}
+.Service-box.green:hover {
+    background:#08da4e ;
+    color: #fff;
+}
+
+/* pricing */
+
+.pricing .card{
+    transition: all 0.3s;
+
+}
+.pricing .card:hover {
+     
+    transform: scale(1.1);
+}
+
+/* contact */
+
+.info-box{
+background-color: #fafbff;
+padding: 30px;
+}
+
+.info-box i{
+  font-size: 38px;
+  line-height: 0;
+  color: #4154f1;
+    }
+
+    .cellphone{
+        direction: ltr;
+        text-align: right;
+    }
+
+   .contact-form{
+    background-color: #fafbff;
+    padding: 30px;
+    height: 100%;
+    }
+
+    /* footer */
+
+    .footer .social-links i{
+        font-size: 20px;
+        color: rgb(1,41,112, 0.5);
+
+    }
+    .footer hr{
+        width: 70%;
+        height: 5px;
+    }
+    .footer .footer-link a{
+       color: #000;
+    }
+    .footer .footer-links i{
+    font-size: 13px;
+     }
